@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-807" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Teleprompter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Teleprompter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TeleprompterViewController" customModule="Teleprompter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,18 +76,40 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="play" id="rPQ-LD-bKl"/>
-                        <barButtonItem systemItem="pause" id="YKP-TO-Hmd"/>
-                        <barButtonItem systemItem="stop" id="Jp7-sE-1hc"/>
+                        <barButtonItem systemItem="play" id="rPQ-LD-bKl">
+                            <connections>
+                                <action selector="start:" destination="BYZ-38-t0r" id="RIz-gj-z63"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="pause" id="YKP-TO-Hmd">
+                            <connections>
+                                <action selector="pause:" destination="BYZ-38-t0r" id="qap-0J-f5c"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="stop" id="Jp7-sE-1hc">
+                            <connections>
+                                <action selector="stop:" destination="BYZ-38-t0r" id="omR-yM-eXy"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="C1v-gE-u8R"/>
-                        <barButtonItem systemItem="refresh" id="n1b-bs-xRm"/>
+                        <barButtonItem systemItem="refresh" id="n1b-bs-xRm">
+                            <connections>
+                                <action selector="flip:" destination="BYZ-38-t0r" id="gzD-hN-t3d"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="XO8-k2-1Or"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="leftLabel" destination="QfC-ls-fYp" id="FRT-vO-Arn"/>
+                        <outlet property="middleLabel" destination="0pK-gK-EOE" id="Qmv-Ti-j64"/>
+                        <outlet property="rightLabel" destination="OSC-f5-C1Z" id="CAF-n9-SED"/>
+                        <outlet property="textView" destination="lcg-0h-Xdi" id="yTz-wm-N71"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-31" y="134"/>
         </scene>
     </scenes>
 </document>

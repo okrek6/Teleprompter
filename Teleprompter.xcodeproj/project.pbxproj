@@ -14,6 +14,8 @@
 		A9679F8B2266D63300C3D28E /* TeleprompterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9679F8A2266D63300C3D28E /* TeleprompterTests.swift */; };
 		A9679F962266D63300C3D28E /* TeleprompterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9679F952266D63300C3D28E /* TeleprompterUITests.swift */; };
 		A9679FA42266DECF00C3D28E /* TeleprompterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9679FA32266DECF00C3D28E /* TeleprompterViewController.swift */; };
+		A9CE0B652267CF4C008474B3 /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE0B642267CF4C008474B3 /* Scroll.swift */; };
+		A9CE0B672267D188008474B3 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE0B662267D188008474B3 /* Orientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A9679F952266D63300C3D28E /* TeleprompterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleprompterUITests.swift; sourceTree = "<group>"; };
 		A9679F972266D63300C3D28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9679FA32266DECF00C3D28E /* TeleprompterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleprompterViewController.swift; sourceTree = "<group>"; };
+		A9CE0B642267CF4C008474B3 /* Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
+		A9CE0B662267D188008474B3 /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				A9679F752266D63300C3D28E /* AppDelegate.swift */,
 				A9679FA32266DECF00C3D28E /* TeleprompterViewController.swift */,
+				A9CE0B642267CF4C008474B3 /* Scroll.swift */,
+				A9CE0B662267D188008474B3 /* Orientation.swift */,
 				A9679F792266D63300C3D28E /* Main.storyboard */,
 				A9679F7C2266D63300C3D28E /* Assets.xcassets */,
 				A9679F7E2266D63300C3D28E /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CE0B672267D188008474B3 /* Orientation.swift in Sources */,
 				A9679FA42266DECF00C3D28E /* TeleprompterViewController.swift in Sources */,
 				A9679F762266D63300C3D28E /* AppDelegate.swift in Sources */,
+				A9CE0B652267CF4C008474B3 /* Scroll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
